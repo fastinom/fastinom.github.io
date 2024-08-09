@@ -1,0 +1,1 @@
+# fastinom.github.io
