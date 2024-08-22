@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-image: url("site-background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+}
+
+p {
+  margin: 0.5em 0;
+}
+
+header {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #a493c0;
+  padding: 10px;
+  z-index: 1000;
+}
+
+footer {
+  display: block;
+  position: relative;
+  width: 100%;
+  background-color: #a493c0;
+  padding-bottom: 3em;
+  text-align: center;
+}
+
+nav a:visited,
+nav a:link,
+h1 {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav > ul {
+  float: right;
+  display: inline;
+  padding-right: 3em;
+}
+
+nav > ul > li {
+  display: inline-block;
+  list-style: none;
+  padding-right: 3em;
+  margin: 0 5px;
+}
+
+main {
+  display: block;
+  padding-top: 5em;
+  padding-bottom: 3em;
+  min-height: 85%;
+}
+
+aside,
+article {
+  padding: 2em;
+}
+
+aside {
+  text-align: center;
+}
+
+article {
+  padding-top: 5em;
+  width: 75%;
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    display: flex;
+  }
+
+  aside {
+    margin-left: 2%;
+  }
+}
+
+/* Courses Section Styles */
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.course-section {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.course-year {
+  font-size: 1.5em;
+  color: #0066cc;
+  margin-bottom: 10px;
+}
+
+.course-list {
+  list-style: none;
+  padding: 0;
+}
+
+.course-item {
+  margin-bottom: 10px;
+}
+
+.course-item a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.course-item a:hover {
+  text-decoration: underline;
+}
+
+/* Experience Section Styles */
+#experience {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.experience-item {
+  margin-bottom: 30px;
+}
+
+.experience-item h2 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.experience-item p {
+  margin: 5px 0;
+}
+
+.experience-item ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.experience-item ul li {
+  margin-bottom: 10px;
+}
+
+/* Education Section Styles */
+#education {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.education-item {
+  margin-bottom: 30px;
+}
+
+.education-item h2 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.education-item h3 {
+  margin: 10px 0 0 0;
+  font-size: 1.2em;
+  color: #666;
+}
+
+.education-item p {
+  margin: 5px 0;
+}
+
+.education-item ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.education-item ul li {
+  margin-bottom: 5px;
+}
+
+/* Volunteering Section Styles */
+#volunteering {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.volunteering-item {
+  margin-bottom: 30px;
+}
+
+.volunteering-item h2 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.volunteering-item p {
+  margin: 5px 0;
+}
+
+.volunteering-item ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.volunteering-item ul li {
+  margin-bottom: 10px;
+}
+
+/* Project Section Styles */
+h1 {
+  font-size: 3em;
+  margin-top: 0.5em;
+}
+
+.banner {
+  max-width: 100%;
+}
+
+.sub-title {
+  font-size: 1.5em;
+  color: #fff;
+  padding: 10px;
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2em;
+}
+
+.project article {
+  flex: 2;
+  padding-left: 1em;
+}
+
+.project aside {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project img,
+.project iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .project {
+    flex-direction: column;
+  }
+
+  .project aside {
+    margin-bottom: 1em;
+  }
+}
+
+.favicon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
